@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: red;
+    background: linear-gradient(to right,#B1AFFF,#B8E8FC);
+    font-family: 'Fasthand', cursive;
+    
+}
+.container{
+    position: relative;
+}
+.modal{
+    height:300px;
+    width: 300px;
+    background-color: #6aad79;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 15px;
+    margin:auto;
+    margin-top: 100px;
+    margin-left: 39%;
+    position: absolute;
+}
+.modal img{
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+    margin: 20px auto;
+}
+h1{
+    text-align: center;
+    padding-top: 10px;
+}
+.form{
+    height: 380px;
+    /* border: 3px solid #FDFDBD; */
+    width: 350px;
+    margin: 80px auto;
+    margin-left: 37%;
+    border-radius: 20px;
+    background-color: #C8FFD4;
+    position:absolute;
+    
+}
+.title{
+    text-align: center;
+    font-family: 'Fasthand', cursive;
+    font-size: 30px;
+    color: black;
+
+}
+.form .label-username{
+    margin-left:30px;
+    font-size: 25px;
+    margin-top: 20px;
+    color: black;
+}
+.form input[type="text"]{
+    padding: 10px;
+    width: 17rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #B8E8FC;
+    color: black;
+    font-family:  'Fasthand', cursive;
+    font-size: 15px;
+}
+.form .label-password{
+    margin-left:30px;
+    font-size: 25px;
+    margin-top: 20px;
+    color: black;
+}
+.form input[type="password"]{
+    padding: 10px;
+    width: 17rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #B8E8FC;
+    color: black;
+    font-family:  'Fasthand', cursive;
+    font-size: 15px;
+}
+button{
+    margin-left:120px;
+    font-size: 20px;
+    width: 6rem;
+    margin-top: 30px;
+    background-color: #B1AFFF ;
+    color: black;
+    padding: 6px;
+    border-radius: 10px;
+    font-family:  'Fasthand', cursive;
+}
+
+@media only screen and (max-width: 600px) {
+    .form {
+        
+            height: 380px;
+            /* border: 3px solid #FDFDBD; */
+            width: 350px;
+            margin: 80px auto;
+            margin-left: 30px;
+            border-radius: 20px;
+            background-color: #C8FFD4;
+            position:absolute;
+            
+    }
+    .modal{
+        height:300px;
+        width: 300px;
+        background-color: #6aad79;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        border-radius: 15px;
+        margin:auto;
+        margin-top: 100px;
+        margin-left: 45px;
+        position: absolute;
+    }
+  }
