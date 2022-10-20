@@ -12,8 +12,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
     </script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -37,17 +40,16 @@
                         <li class="nav-item ms-3">
                             <a class="nav-link text-white" href="work.html">Work</a>
                         </li>
-
                     </ul>
                 </div>
             </div>
         </nav>
     </div>
-
     <div class="cards">
-        <div class="row">
-            <div class="col-sm-4 left g-0">
-                <div class="card" style="width: 18rem;">
+        <div class="row" >
+            
+            <!-- <div class="col-sm-4 left g-0 animate__animated animate__pulse" id="card_school">
+                <div class="card card-front" style="width: 18rem;">
                     <img class="card-img-top"
                         src="https://assets-cdn.kathmandupost.com/uploads/source/news/2019/miscellaneous/Lalitpur_madhyamik_school20190124_0101-05022019084004.jpg"
                         alt="Card image cap">
@@ -55,9 +57,75 @@
                         <p class="card-text text-white" style="font-family:'Fuzzy Bubbles', cursive;">Lalitpur Madhyamik Vidhyalaya</p>
                     </div>
                 </div>
+               
+            </div> -->
+            <div class="col-sm-4 g-0 animate__animated animate__pulse card">
+                <div class="card-inner">
+                    <div class="card-front" >
+                        <img class="card-img-top"
+                            src="https://assets-cdn.kathmandupost.com/uploads/source/news/2019/miscellaneous/Lalitpur_madhyamik_school20190124_0101-05022019084004.jpg"
+                            alt="Card image cap">
+                        <div class="card-body" style="background-color:#100F0F">
+                            <p class="card-text text-white" style="font-family:'Fuzzy Bubbles', cursive;">Lalitpur Madhyamik Vidhyalaya</p>
+                        </div>
+                    </div>
+
+                    <div class=" card-back" >
+                        <img class="card-img-top"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOg3RYGBCbL4IxSJt0ZCac7VTF5qcqlVUy-g&usqp=CAU"
+                            alt="Card image cap">
+                        <div class="card-body" style="background-color:#100F0F">
+                            <p class="card-text text-white" style="font-family:'Fuzzy Bubbles', cursive;">Lalitpur Madhyamik Vidhyalaya</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-sm-4 right g-0">
-                <div class="card" style="width: 18rem;">
+            <div class="col-sm-4 right g-0 animate__animated animate__pulse card">
+                <div class="card-inner">
+                    <div class="card-front" >
+                        <img class="card-img-top"
+                            src="https://www.juksun.com/wp-content/uploads/2021/08/Little-Angels-College-Building.jpg?x47719"
+                            alt="Card image cap">
+                        <div class="card-body" style="background-color:#100F0F">
+                            <p class="card-text text-white" style="font-family:'Fuzzy Bubbles', cursive;">Little Angels College
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class=" card-back" >
+                        <img class="card-img-top"
+                            src="https://www.admissionnepal.com/file_storage/644f970cbf81c66e0d73fc532437562c.webp"
+                            alt="Card image cap">
+                        <div class="card-body" style="background-color:#100F0F">
+                            <p class="card-text text-white" style="font-family:'Fuzzy Bubbles', cursive;">Little Angels College</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 right g-0 animate__animated animate__pulse card">
+                <div class="card-inner">
+                    <div class="card-front" >
+                        <img class="card-img-top"
+                            src="https://assets-cdn.kathmandupost.com/uploads/source/news/2019/miscellaneous/Patan-Multiple-Campus.jpg"
+                            alt="Card image cap">
+                        <div class="card-body" style="background-color:#100F0F">
+                            <p class="card-text text-white" style="font-family:'Fuzzy Bubbles', cursive;">Patan Multiple Campus
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class=" card-back" >
+                        <img class="card-img-top"
+                            src="https://cdn.gurubaa.com/wp-content/uploads/2022/08/Patan-Multiple-Campus-1.jpg?strip=all&lossy=1&quality=92&webp=92&sharp=1&ssl=1"
+                            alt="Card image cap">
+                        <div class="card-body" style="background-color:#100F0F">
+                            <p class="card-text text-white" style="font-family:'Fuzzy Bubbles', cursive;">Patan Multiple Campus</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col-sm-4 right g-0 animate__animated animate__pulse">
+                <div class="card card-front" style="width: 18rem;">
                     <img class="card-img-top"
                         src="https://www.juksun.com/wp-content/uploads/2021/08/Little-Angels-College-Building.jpg?x47719"
                         alt="Card image cap" style="height:150px">
@@ -66,8 +134,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4 right g-0">
-                <div class="card" style="width: 18rem;">
+            <div class="col-sm-4 right g-0 animate__animated animate__pulse">
+                <div class="card card-front" style="width: 18rem;">
                     <img class="card-img-top"
                         src="https://assets-cdn.kathmandupost.com/uploads/source/news/2019/miscellaneous/Patan-Multiple-Campus.jpg"
                         alt="Card image cap">
@@ -75,11 +143,8 @@
                         <p class="card-text text-white" style="font-family:'Fuzzy Bubbles', cursive;">Patan Multiple Campus</p>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
-    
-    
-        
     </div>
     <div class="footer">
         <div class="row">
@@ -119,6 +184,10 @@
             </div>
         </div>
     </div>
-</body>
+    <script>    
+        
+       
 
+    </script>
+</body>
 </html>
