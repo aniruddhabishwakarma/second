@@ -14,6 +14,7 @@
   </script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="script.js" defer></script>
 </head>
 
@@ -72,21 +73,26 @@
         <h1>Skills</h1>
       </div>
       <div class="col-sm-2">
-        <img src="html.gif" alt="" width="120" height="120">
+        <div class="html"  id="html">The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser.</div>
+        <img src="html.gif" alt="" width="120" height="120" id="html-img">
       </div>
       <div class="col-sm-2">
-        <img src="css.gif" alt="" width="120" height="120">
+        <div class="css" id="css">Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML.</div>
+        <img src="css.gif" alt="" width="120" height="120" id="css-img">
       </div>
       <div class="col-sm-2">
+        <div class="bootstrap" id="bootstrap">Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains HTML, CSS and JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.</div>
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1200px-Bootstrap_logo.svg.png"
-          alt="" width="100" height="100">
+          alt="" width="100" height="100" id="bootstrap-img">
       </div>
       <div class="col-sm-2">
-        <img src="javascript.gif" alt="" width="120" height="120">
+        <div class="javascript" id="javascript">JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. </div>
+        <img src="javascript.gif" alt="" width="120" height="120" id="java-script">
       </div>
       <div class="col-sm-2">
-        <img src="mysql.gif" alt="" width="120" height="120">
+        <div class="sql" id="sql">MySQL is an open-source relational database management system. The abbreviation for Structured Query Language</div>
+        <img src="mysql.gif" alt="" width="120" height="120" id="sql-img">
       </div>
     </div>
   </div>
@@ -141,6 +147,37 @@
       </div>
     </div>
   </div>
+  <script>
+   $(function() {
+    $('img#html-img').hover(function() {
+        $('#html').toggle();
+    });
+});
+
+$(function() {
+    $('img#css-img').hover(function() {
+        $('#css').toggle();
+    });
+});
+
+$(function() {
+    $('img#bootstrap-img').hover(function() {
+        $('#bootstrap').toggle();
+    });
+});
+
+$(function() {
+    $('img#java-script').hover(function() {
+        $('#javascript').toggle();
+    });
+});
+
+$(function() {
+    $('img#sql-img').hover(function() {
+        $('#sql').toggle();
+    });
+});
+  </script>
 </body>
 
 </html>
