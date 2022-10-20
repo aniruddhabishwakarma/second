@@ -225,7 +225,7 @@ nav{
 .cards{
     height: 400px;
     background:linear-gradient(to right,rgba(26, 24, 24, 0.5),rgba(94, 87, 87, 0.5));
-    /* padding: 50px 50px; */
+    padding: 50px 50px;
     
 }
 .cards .row{
